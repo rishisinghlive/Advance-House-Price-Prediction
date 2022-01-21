@@ -1,12 +1,12 @@
-Advance House Price Prediction Report
+# Advance House Price Prediction Report
 
 **Data Source: Kaggle**
 
 **The dataset has record of 1460 houses which has 81 unique feature**
 
 **Target: Based on these features predict the price**
-# Data Preprocessing
-## Challenges:
+## Data Preprocessing
+### Challenges:
 
   **Numerical Features: The dataset has 38 numerical feature** 
 1. **Missing values:**
@@ -32,26 +32,26 @@ Advance House Price Prediction Report
 - Approach: one hot encoding, Target Guided encoding (will groupby the categorical feature with the mean Sale price and give each category a rank based on the mean price).
 - Status: Target Guided encoding is Effective (Performed slightly better than one hot encoding)
 
-# Feature Selection
+## Feature Selection
 
 - Problem: Dataset has 81 Feature 
 - Approach: Correlation with sale price, Variance Threshold, Mutual information.
 - Status: Not effective (Removed dimension did not give a better result)
 - Scope of improving the approach is high.
 
-# Outliers Detection
+## Outliers Detection
 - Problem: Most of the Numerical feature has outliers.
 - Approach: Used IQR to detect the outliers and replace them with lower limit and upper limit.
 - Status: Not effective (Did Perform well on training and testing, Did not increased the Rank in Competition)
 
-# Transformation:
+## Transformation:
 
 - Problem: Every feature is not at the same scale.
 - Approach: Min Max Scaler, Standard Scaler, box-cox Transformation, Log Transformation.
 - Status: Log Transformation is effective. (Gives a slightly better results)
 - Scope of improving the approach is High
 
-# Model Building
+## Model Building
 1. **Linear Regression:**
    - Training Root Mean Squared Error – 0.122
    - Test score – 0.132
