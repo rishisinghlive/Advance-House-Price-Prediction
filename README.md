@@ -85,7 +85,7 @@
    - Score on kaggle – 0.1243 
 
 ## PARTICIPANTS: 5053
-## RANK: 714 
+## RANK: 612
 
 
 
